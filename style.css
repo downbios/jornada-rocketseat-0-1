@@ -14,4 +14,61 @@
     width: 100%;
     height: 100%;
   }
-/*===========  ===========*/
+/*=========== VARIABLES ===========*/
+:root {
+    --header-height: 4.5rem;
+    /* colors */
+    --hue: 344;
+    /* HSL color mode */
+    --base-color: hsl(var(--hue) 90% 60%);
+    --base-color-second: hsl(var(--hue) 70% 88%);
+    --base-color-alt: hsl(var(--hue) 80% 65%);
+    --title-color: hsl(var(--hue) 41% 10%);
+    --text-color: hsl(0 0% 25%);
+    --text-color-light: hsl(0 0% 98%);
+    --body-color: hsl(0 0% 98%);
+    /* fonts-size */
+    --title-font-size: 1.875rem;
+    --subtitle-font-size: 1rem;
+    /* fonts */
+    --title-font: 'Cinzel', sans-serif;
+    --body-font: 'Inter', sans-serif;
+  }
+/*=========== BASE ===========*/
+body {
+    text-align: center;
+    padding-top: 160px;
+    background: url(assets/image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100vh;
+}
+h1 {
+    font: 700 var(--title-font-size) var(--title-font);
+    font-size: 64px;
+    line-height: 86px;
+    color: var(--title-color);
+}
+h1 span {
+    color: var(--base-color);
+}
+p {
+    font: 400 var(--subtitle-font-size) var(--body-font);
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--text-color);
+    margin-bottom: 72px;
+}
+a {
+  padding: 16px 32px;
+  font: 700 var(--subtitle-font-size) var(--body-font);
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--text-color);
+}
+a:hover, .btn-1 {
+  color: var(--text-color-light);
+  background-color: var(--base-color);
+  border-radius: 80px;
+}
